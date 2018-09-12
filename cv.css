@@ -1,0 +1,182 @@
+.row{
+  clear: both;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  /* for elements to align left and so our responsivness doesn't break :')*/
+  .col-1, .col-2, .col-3, .col-4, .col-5,
+  .col-6, .col-7, .col-8, .col-9, .col-10,
+  .col-11, .col-12
+  {
+    float: left;
+  }
+  .description{
+    color: royalblue;
+    position: relative;
+    margin-top: -10%;  
+  }
+
+  @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+          width: 100%;
+      }
+     /* overrides this css classes if screen is smaller than 768 */
+      .col-10.dialogue, .col-11.dialogue{
+        display: inline;
+        background-color: #ffffff;
+      }
+      .date.description{
+        display: inline;
+      }
+      .date{
+        text-align: left;
+        display: inline;
+      }
+      .description{
+        color: #f0eff0;
+        display: inline; 
+      }
+    }
+  
+  .container{
+    background-color: #ffffff;
+    margin: 5% 5% 5% 5%;
+  }
+  /* here margin-top: -5% does the trick with class medium margin-top: 15% 
+    for the image to appear as if is half out */
+  .caracho{
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: relative;
+    border: 5px solid royalblue;
+    margin-top: -5%;
+  }
+  .divisor{
+    border-bottom: 2px solid #f0eff0;
+  }
+  /* As you can tell i really prefer classes over ids when isn't mandatory */
+  .medium{
+    margin-top: 10%;
+    display: block;
+    text-align: center;
+  }
+  .date{
+    text-align: center;
+  }
+  .contact{
+    margin-left: 5%;
+  }
+  .orange{
+    color: #ff4447;
+  }
+  .deep-blue{
+    color: #0d293a;
+  }
+  .deep-green{
+    color: #257985;
+  }
+  .dialogue{
+    background: #f0eff0;
+    position: relative;
+    margin-bottom: 1%;
+  }
+  /* https://leaverou.github.io/bubbly/ */
+  .dialogue:after { 
+    content: '';
+    position: absolute;
+    left: 0; top: 50%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-right-color: #f0eff0;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -15px;
+    margin-left: -10px;
+  }
+  .skills{
+    background-color: #ff4447;
+    color: #ffffff;
+    margin-top: 1%;
+    padding: 1%;
+  }
+  /* For skills lis*/
+  .ruby{
+    margin-right: 10%;
+  }
+  .java-script{
+    margin-right: 20%;
+  }
+  .react{
+    margin-right: 30%;
+  }
+  .css{
+    margin-right: 40%;
+  }
+  .dos{
+    margin-right: 30%;
+  }
+
+  .languages{
+    border-bottom: 1px solid #f0eff0;
+    padding: 2%;
+    list-style: none;
+    margin-right: 3%;
+  }
+  .stars{
+    display: inline-block;
+    width: 5%;
+    float: right;
+    padding: 1% 2%;
+  }
+  .hobbies{
+    background-color: royalblue;
+    padding: 2%;
+    list-style: none;
+    display: inline-block;
+    color: #ffffff;
+    margin-top: 1%;
+  }
+  p{
+    padding-left: 2%;
+  }
+  h1{
+    color: #0d293a;
+    text-align: center;
+  }
+  ul{
+    padding-left: 3%;
+  }
+  ul li{
+    margin-left: 0%;
+  }
+  body{
+    background-color:  royalblue;
+    font-family: Arial;
+  }
+  h2{
+    padding-left: 3%;
+  }
+
